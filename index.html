@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Saini | Full Stack Developer & ML Engineer</title>
+    <meta name="description" content="Portfolio of Aditya Saini — Full Stack Developer, ML Engineer, and Web Developer. Explore my projects, skills, and experience.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>AS<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#demos" class="nav-link">Demos</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-greeting">👋 Hello, I'm</p>
+            <h1 class="hero-name">Aditya Saini</h1>
+            <div class="hero-role">
+                <span class="role-prefix">I'm a </span>
+                <span class="typed-text" id="typedText"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-desc">Building intelligent web applications & ML solutions that solve real-world problems.</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View Projects</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <span>Contact Me</span>
+                </a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://github.com/" target="_blank" class="social-link" title="GitHub">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="https://linkedin.com/in/" target="_blank" class="social-link" title="LinkedIn">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-number">01.</span> About Me
+            </h2>
+            <div class="about-grid reveal">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">
+                            <span class="placeholder-initials">AS</span>
+                        </div>
+                        <div class="image-border"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>Hey! I'm <strong>Aditya Saini</strong>, a passionate <strong>Full Stack Developer</strong> and <strong>ML Engineer</strong> from India. I love building intelligent applications that combine clean code with powerful algorithms.</p>
+                    <p>From predicting NEET exam patterns using Machine Learning to mapping metro routes with graph algorithms — I enjoy solving complex problems and turning them into elegant, user-friendly solutions.</p>
+                    <p>I'm constantly learning and experimenting with new technologies. When I'm not coding, you'll find me exploring new tech stacks and contributing to open-source projects.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="2">0</span>
+                            <span class="stat-label">Projects Built</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="5">0</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="3500">0</span>
+                            <span class="stat-label">Lines of Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-number">02.</span> Skills & Technologies
+            </h2>
+            <div class="skills-grid reveal">
+                <!-- Languages -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                    </div>
+                </div>
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+                <!-- Backend -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                        </div>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Uvicorn</span>
+                    </div>
+                </div>
+                <!-- ML/AI -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L12 22l-.75-12.07A4.001 4.001 0 0 1 12 2z"/><circle cx="12" cy="6" r="1"/></svg>
+                        </div>
+                        <h3>ML / AI</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Linear Regression</span>
+                        <span class="skill-tag">Data Analysis</span>
+                    </div>
+                </div>
+                <!-- DSA -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        </div>
+                        <h3>DSA & Algorithms</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">BFS</span>
+                        <span class="skill-tag">Dijkstra</span>
+                        <span class="skill-tag">Graph Theory</span>
+                        <span class="skill-tag">Data Structures</span>
+                    </div>
+                </div>
+                <!-- Tools -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        </div>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Vercel</span>
+                        <span class="skill-tag">Automation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-number">03.</span> Featured Projects
+            </h2>
+            <div class="projects-grid">
+                <!-- Project 1: NEET Prediction -->
+                <div class="project-card reveal">
+                    <div class="project-media">
+                        <video class="project-video" muted loop preload="metadata" poster="">
+                            <source src="assets/videos/neet-prediction-demo.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-overlay">
+                            <button class="play-btn" aria-label="Play demo video">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                            </button>
+                        </div>
+                        <div class="project-badge">Full Stack + ML</div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">🧠 NEET Exam Prediction App</h3>
+                        <p class="project-desc">Full-stack ML application analyzing <strong>20 years</strong> of NEET exam data to predict future exam patterns with <strong>85-90% accuracy</strong>. Features interactive dashboards, subject-wise predictions, topic trend analysis, and priority-based study recommendations.</p>
+                        <div class="project-features">
+                            <span>📊 Interactive Charts</span>
+                            <span>🤖 ML Predictions</span>
+                            <span>📱 Responsive UI</span>
+                            <span>🎯 85-90% Accuracy</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>Next.js</span>
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>Scikit-learn</span>
+                            <span>Recharts</span>
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/" target="_blank" class="project-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                <span>Source Code</span>
+                            </a>
+                            <a href="#demos" class="project-link demo-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                                <span>Watch Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Dehradun Metro -->
+                <div class="project-card reveal">
+                    <div class="project-media">
+                        <video class="project-video" muted loop preload="metadata" poster="">
+                            <source src="assets/videos/dehradun-metro-demo.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-overlay">
+                            <button class="play-btn" aria-label="Play demo video">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                            </button>
+                        </div>
+                        <div class="project-badge">DSA + Web UI</div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">🚇 Dehradun Metro Route Mapper</h3>
+                        <p class="project-desc">Dual-interface metro navigation system featuring both a <strong>C console application</strong> and a <strong>modern Web UI</strong>. Uses <strong>BFS & Dijkstra algorithms</strong> for optimal route finding across 23 stations and 3 metro lines, with automatic fare calculation and interactive visual map.</p>
+                        <div class="project-features">
+                            <span>🗺️ Interactive Map</span>
+                            <span>⚡ BFS & Dijkstra</span>
+                            <span>💰 Fare Calculator</span>
+                            <span>🖥️ Dual Interface</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>C</span>
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                            <span>BFS</span>
+                            <span>Dijkstra</span>
+                            <span>Graph Algorithms</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/" target="_blank" class="project-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                <span>Source Code</span>
+                            </a>
+                            <a href="#demos" class="project-link demo-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                                <span>Watch Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PROJECT DEMOS ============ -->
+    <section class="section demos" id="demos">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-number">04.</span> Project Demos
+            </h2>
+            <p class="section-subtitle reveal">Watch my projects in action — screen recordings of live demos.</p>
+            <div class="demos-grid reveal">
+                <!-- Demo 1 -->
+                <div class="demo-card" data-video="assets/videos/neet-prediction-demo.mp4">
+                    <div class="demo-thumbnail">
+                        <video class="demo-preview" muted preload="metadata">
+                            <source src="assets/videos/neet-prediction-demo.mp4" type="video/mp4">
+                        </video>
+                        <div class="demo-play-overlay">
+                            <div class="play-circle">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo-info">
+                        <h4>NEET Exam Prediction App</h4>
+                        <p>ML predictions, interactive dashboards, and subject analysis</p>
+                    </div>
+                </div>
+                <!-- Demo 2 -->
+                <div class="demo-card" data-video="assets/videos/dehradun-metro-demo.mp4">
+                    <div class="demo-thumbnail">
+                        <video class="demo-preview" muted preload="metadata">
+                            <source src="assets/videos/dehradun-metro-demo.mp4" type="video/mp4">
+                        </video>
+                        <div class="demo-play-overlay">
+                            <div class="play-circle">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo-info">
+                        <h4>Dehradun Metro Route Mapper</h4>
+                        <p>Route finding with BFS/Dijkstra, interactive metro map</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ VIDEO LIGHTBOX MODAL ============ -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Close video">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            <video class="lightbox-video" id="lightboxVideo" controls>
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-number">05.</span> Get In Touch
+            </h2>
+            <p class="section-subtitle reveal">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+            <div class="contact-grid reveal">
+                <a href="mailto:adityasaini@email.com" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <h4>Email</h4>
+                    <p>adityasaini@email.com</p>
+                </a>
+                <a href="https://github.com/" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </div>
+                    <h4>GitHub</h4>
+                    <p>View my repositories</p>
+                </a>
+                <a href="https://linkedin.com/in/" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </div>
+                    <h4>LinkedIn</h4>
+                    <p>Let's connect</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>AS<span class="logo-bracket">/&gt;</span>
+                </a>
+                <p class="footer-text">Designed & Built by <strong>Aditya Saini</strong></p>
+                <div class="footer-links">
+                    <a href="https://github.com/" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            <p class="footer-copyright">&copy; 2026 Aditya Saini. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
