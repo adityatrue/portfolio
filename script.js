@@ -14,7 +14,7 @@ let typeSpeed = 80;
 
 function typeEffect() {
     const currentRole = roles[roleIndex];
-    
+
     if (isDeleting) {
         typedTextEl.textContent = currentRole.substring(0, charIndex - 1);
         charIndex--;
@@ -95,11 +95,12 @@ const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target); // stop observing once visible
         }
     });
 }, {
-    threshold: 0.1,
-    rootMargin: '0px 0px -40px 0px'
+    threshold: 0.05,
+    rootMargin: '0px 0px -10px 0px'
 });
 
 revealElements.forEach(el => revealObserver.observe(el));
@@ -130,7 +131,7 @@ function animateCounter(el, target) {
         const progress = Math.min(elapsed / duration, 1);
         const eased = 1 - Math.pow(1 - progress, 3); // easeOutCubic
         const current = Math.round(start + (target - start) * eased);
-        
+
         el.textContent = current >= 1000 ? current.toLocaleString() + '+' : current + '+';
 
         if (progress < 1) {
@@ -152,7 +153,7 @@ function openLightbox(videoSrc) {
     lightboxVideo.load();
     lightbox.classList.add('active');
     document.body.style.overflow = 'hidden';
-    lightboxVideo.play().catch(() => {});
+    lightboxVideo.play().catch(() => { });
 }
 
 function closeLightbox() {
@@ -197,7 +198,7 @@ document.querySelectorAll('.demo-card').forEach(card => {
     const preview = card.querySelector('.demo-preview');
     if (preview) {
         card.addEventListener('mouseenter', () => {
-            preview.play().catch(() => {});
+            preview.play().catch(() => { });
         });
         card.addEventListener('mouseleave', () => {
             preview.pause();
@@ -208,7 +209,7 @@ document.querySelectorAll('.demo-card').forEach(card => {
 
 // ===== SMOOTH SCROLL =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
