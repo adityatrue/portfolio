@@ -570,10 +570,12 @@ video {
     margin-top: 28px;
     padding-top: 24px;
     border-top: 1px solid var(--glass-border);
+    min-height: 90px;
 }
 
 .stat {
     text-align: center;
+    min-width: 80px;
 }
 
 .stat-number {
@@ -582,6 +584,8 @@ video {
     font-weight: 800;
     color: var(--accent);
     line-height: 1.2;
+    font-variant-numeric: tabular-nums;
+    min-height: 2.6rem;
 }
 
 .stat-label {
