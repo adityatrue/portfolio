@@ -1158,8 +1158,14 @@ video {
         gap: 32px;
     }
 
-    .about-stats {
-        justify-content: center;
+    .stats-bar {
+        gap: 24px;
+        padding: 28px 16px;
+        min-height: auto;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
     }
 
     .skills-grid {
@@ -1215,7 +1221,21 @@ video {
     }
 
     .stat-number {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+    }
+
+    .stats-bar {
+        gap: 16px;
+        padding: 24px 12px;
+    }
+
+    .stat {
+        min-width: 70px;
+    }
+
+    .stat-label {
+        font-size: 0.68rem;
+        letter-spacing: 0.5px;
     }
 
     .project-info {
